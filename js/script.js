@@ -67,7 +67,7 @@ tombolL.addEventListener("click", function () {
 
 hapusL.addEventListener("click", function () {
   hasilL.textContent = "";
-  penyimpanL.textContent = "" + " x " + "";
+  penyimpanL.textContent = " " + " x " + "";
 });
 
 //<===== tampilan hasil luas =====>
