@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kalkulator Online</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div>
+      <div class="layout1">
+        <header>
+          <span>
+            <h1>KATIK</h1>
+          </span>
+          <span style="padding-top: 12px"> Kalkulator Matematik </span>
+        </header>
+      </div>
+      <div class="__container-main-layout">
+        <div>
+          <div class="outset">
+            <h1 class="judul">Selamat Datang</h1>
+            <p>
+              Katik adalah sebuah Website sederhana yang berfungsi untuk
+              menghitung nilai Luas dan Keliling dari sebuah Bangun Datar.
+            </p>
+            <div class="inset">
+              <p>Silahkan Pilih Dahulu</p>
+              <ul>
+                <li
+                  onclick="customButton('Persegi')"
+                  class="custom-button"
+                  id="persegi"
+                >
+                  Persegi
+                </li>
+                <br />
+                <br />
+                <li
+                  onclick="customButton('Persegi Panjang')"
+                  class="custom-button"
+                >
+                  Persegi Panjang
+                </li>
+                <br />
+                <br />
+                <li onclick="customButton('Segitiga')" class="custom-button">
+                  Segitiga
+                </li>
+                <br />
+                <br />
+                <li onclick="customButton('Trapesium')" class="custom-button">
+                  Trapesium
+                </li>
+                <br />
+                <br />
+                <li
+                  onclick="customButton('Jajar Genjang')"
+                  class="custom-button"
+                >
+                  Jajar Genjang
+                </li>
+                <br />
+                <br />
+                <li
+                  onclick="customButton('Belah Ketupat')"
+                  class="custom-button"
+                >
+                  Belah Ketupat
+                </li>
+                <br />
+                <br />
+                <li
+                  onclick="customButton('Layang-Layang')"
+                  class="custom-button"
+                >
+                  Layang-Layang
+                </li>
+                <br />
+                <br />
+                <li onclick="customButton('Lingkaran')" class="custom-button">
+                  Lingkaran
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="layout3">
+          <div class="tampilan" id="default">
+            <i>
+              silahkan pilih dulu bentuk-bentuk bangun datar di kiri layar!!!
+            </i>
+          </div>
+          <div class="tampilan" id="tampilanLuas">
+            <div class="main-gambar">
+              <img src="/assets/Persegi.png" alt="persegi" />
+            </div>
+            <br />
+            <div class="keterangan">
+              <span>Rumus Luas<span id="bangunDatarLuas1" /></span>
+              <p><strong> L = S x S</strong></p>
+              <i>keterangan:</i><br />
+              <i>L = Luas</i><br />
+              <i>S = Sisi</i>
+            </div>
+            <div class="isi">
+              <h1>Hitung Luas <span id="bangunDatarLuas2" /></h1>
+              <input type="number" id="nilaiLuas" placeholder="Sisi" />
+              <br />
+              <br />
+              <button id="hitungLuas">Hitung</button>
+            </div>
+            <div>
+              <p>L = S x S</p>
+              <p>L =<span id="penyimpanLuas">x </span></p>
+              <p>L =<span id="hasilLuas" /></p>
+            </div>
+            <div id="flexBoxLuas" class="flexBox">
+              <button id="LuasDalamLuas">Hitung Luas</button>
+              <button id="KelilingDalamLuas">Hitung Keliling</button>
+              <button id="hapusLuas">Reset</button>
+            </div>
+          </div>
+          <div class="tampilan" id="tampilanKeliling">
+            <div class="main-gambar">
+              <img src="/assets/Persegi.png" alt="persegi" />
+            </div>
+            <br />
+            <div class="keterangan">
+              <span>Rumus Keliling<span id="bangunDatarKeliling1" /></span>
+              <p><strong> K = 4 x S</strong></p>
+              <i>keterangan:</i><br />
+              <i>K = Keliling</i><br />
+              <i>S = Sisi</i>
+            </div>
+            <div class="isi">
+              <h1>Hitung Keliling <span id="bangunDatarKeliling2" /></h1>
+              <input type="number" id="nilaiKeliling" placeholder="Sisi" />
+              <br />
+              <br />
+              <button id="hitungKeliling">Hitung</button>
+            </div>
+            <div>
+              <p>K = 4 x S</p>
+              <p>K = 4<span id="penyimpanKeliling">x </span></p>
+              <p>K =<span id="hasilKeliling" /></p>
+            </div>
+            <div id="flexBoxKeliling" class="flexBox">
+              <button id="LuasDalamKeliling">Hitung Luas</button>
+              <button id="KelilingDalamKeliling">Hitung Keliling</button>
+              <button id="hapusKeliling">Reset</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script src="/js/script.js" />
+    </div>
+  </body>
+</html>
