@@ -63,6 +63,7 @@ tombolL.addEventListener("click", function () {
   const hasilLuas = nilaiL.value;
   hasilL.textContent = hasilLuas * hasilLuas;
   penyimpanL.textContent = hasilLuas + " x " + hasilLuas;
+  nilaiL.value = "";
 });
 
 hapusL.addEventListener("click", function () {
@@ -70,7 +71,7 @@ hapusL.addEventListener("click", function () {
   penyimpanL.textContent = " " + " x " + "";
 });
 
-//<===== tampilan hasil luas =====>
+//<===== tampilan hasil Keliling =====>
 
 const nilaiK = document.getElementById("nilaiKeliling");
 const tombolK = document.getElementById("hitungKeliling");
@@ -83,6 +84,7 @@ tombolK.addEventListener("click", function () {
   const dikali = 4;
   hasilK.textContent = dikali * hasilKeliling;
   penyimpanK.textContent = "x " + hasilKeliling;
+  nilaiK.value = "";
 });
 
 hapusK.addEventListener("click", function () {
