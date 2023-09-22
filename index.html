@@ -27,13 +27,7 @@
             <div class="inset">
               <p>Silahkan Pilih Dahulu</p>
               <ul>
-                <li
-                  onclick="customButton('Persegi')"
-                  class="custom-button"
-                  id="persegi"
-                >
-                  Persegi
-                </li>
+                <li onclick="customButton('Persegi')" class="custom-button">Persegi</li>
                 <br />
                 <br />
                 <li
@@ -44,41 +38,39 @@
                 </li>
                 <br />
                 <br />
-                <li onclick="customButton('Segitiga')" class="custom-button">
-                  Segitiga
-                </li>
+                <li class="custom-button" onclick="customButton('Segitiga')">Segitiga</li>
                 <br />
                 <br />
-                <li onclick="customButton('Trapesium')" class="custom-button">
+                <li class="custom-button" onclick="customButton('Trapesium')">
                   Trapesium
                 </li>
                 <br />
                 <br />
                 <li
-                  onclick="customButton('Jajar Genjang')"
                   class="custom-button"
+                  onclick="customButton('Jajar Genjang')"
                 >
                   Jajar Genjang
                 </li>
                 <br />
                 <br />
                 <li
-                  onclick="customButton('Belah Ketupat')"
                   class="custom-button"
+                  onclick="customButton('Belah Ketupat')"
                 >
                   Belah Ketupat
                 </li>
                 <br />
                 <br />
                 <li
-                  onclick="customButton('Layang-Layang')"
                   class="custom-button"
+                  onclick="customButton('Layang-Layang')"
                 >
                   Layang-Layang
                 </li>
                 <br />
                 <br />
-                <li onclick="customButton('Lingkaran')" class="custom-button">
+                <li class="custom-button" onclick="customButton('Lingkaran')">
                   Lingkaran
                 </li>
               </ul>
@@ -92,27 +84,33 @@
             </i>
           </div>
           <div class="tampilan" id="tampilanLuas">
-            <div class="main-gambar">
-              <img src="/assets/Persegi.png" alt="persegi" />
+            <div class="gambarLuas" id="gambarLuas">
+              <img src="" alt="" />
             </div>
-            <br />
             <div class="keterangan">
-              <span>Rumus Luas<span id="bangunDatarLuas1" /></span>
-              <p><strong> L = S x S</strong></p>
-              <i>keterangan:</i><br />
-              <i>L = Luas</i><br />
-              <i>S = Sisi</i>
+              <span>Rumus Luas <span id="bangunDatarLuas1" /></span>
+              <p>
+                <h2 class="rumusL" />
+              </p>
             </div>
+            <i>Keterangan:</i><br>
+            <i class="ketL1"></i><br>
+            <i class="ketL2"></i><br>
+            <i class="ketL3" style="display: none;"></i>
             <div class="isi">
               <h1>Hitung Luas <span id="bangunDatarLuas2" /></h1>
-              <input type="number" id="nilaiLuas" placeholder="Sisi" />
-              <br />
-              <br />
+              <input type="number" id="nilaiLuas" placeholder="" />
+              <div class="plusInputLuas" style="display: flex;">
+                <input type="number" class="nilaiLuas1" placeholder="">
+                <input type="number" class="nilaiLuas2" placeholder="">
+                <input type="number" class="nilaiLuas3" placeholder="" style="display: none;">
+              </div>
+              <br>
               <button id="hitungLuas">Hitung</button>
             </div>
             <div>
-              <p>L = S x S</p>
-              <p>L =<span id="penyimpanLuas"> x </span></p>
+              <p>L =<span class="rumusnyaL"/></p>
+              <p>L =<span id="penyimpanLuas"/></p>
               <p>L =<span id="hasilLuas" /></p>
             </div>
             <div id="flexBoxLuas" class="flexBox">
@@ -122,27 +120,34 @@
             </div>
           </div>
           <div class="tampilan" id="tampilanKeliling">
-            <div class="main-gambar">
-              <img src="/assets/Persegi.png" alt="persegi" />
+            <div class="gambarKeliling" id="gambarKeliling">
+              <img src="" alt="" />
             </div>
-            <br />
             <div class="keterangan">
-              <span>Rumus Keliling<span id="bangunDatarKeliling1" /></span>
-              <p><strong> K = 4 x S</strong></p>
-              <i>keterangan:</i><br />
-              <i>K = Keliling</i><br />
-              <i>S = Sisi</i>
+              <span>Rumus Keliling <span id="bangunDatarKeliling1" /></span>
+              <p>
+                <h2 class="rumusK"/>
+              </p>
             </div>
+            <i>Keterangan:</i><br>
+            <i class="ketK1"></i><br>
+            <i class="ketK2"></i><br>
+            <i class="ketK3" style="display: none;"></i>
             <div class="isi">
-              <h1>Hitung Keliling <span id="bangunDatarKeliling2" /></h1>
-              <input type="number" id="nilaiKeliling" placeholder="Sisi" />
-              <br />
+              <h1>Hitung Keliling <span id="bangunDatarKeliling2"/></h1>
+              <input type="number" id="nilaiKeliling" placeholder="" />
+              <div class="plusInputKeliling" style="display: flex;">
+                <input type="number" class="nilaiKeliling1" placeholder="">
+                <input type="number" class="nilaiKeliling2" placeholder="">
+                <input type="number" class="nilaiKeliling3" placeholder="" style="display: none;">
+              </div>
+              <span id="errorSpan"></span>
               <br />
               <button id="hitungKeliling">Hitung</button>
             </div>
             <div>
-              <p>K = 4 x S</p>
-              <p>K = 4<span id="penyimpanKeliling">x </span></p>
+              <p>K =<span class="rumusnyaK"/></p>
+              <p>K =<span id="penyimpanKeliling"/></p>
               <p>K =<span id="hasilKeliling" /></p>
             </div>
             <div id="flexBoxKeliling" class="flexBox">
@@ -153,7 +158,7 @@
           </div>
         </div>
       </div>
-      <script src="/js/script.js" />
+      <script src="js/script.js" />
     </div>
   </body>
 </html>
